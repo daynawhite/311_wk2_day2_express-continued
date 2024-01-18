@@ -5,7 +5,7 @@ const contactsController = require('../controllers/contacts')
 
 router.get('/', contactsController.list)
 
-router.get ("/:id", contactsController.list)
+router.get ("/:id", contactsController.show)
 
 router.post("/", contactsController.create)
 
